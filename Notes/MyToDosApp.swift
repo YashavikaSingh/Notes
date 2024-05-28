@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-
+import SwiftData
 @main
-struct NotesApp: App {
+struct MyToDosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().modelContainer(for: ToDoItem.self)
         }
     }
 }

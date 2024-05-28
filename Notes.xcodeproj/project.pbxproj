@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21F464262C064E19008E6724 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F464252C064E19008E6724 /* NotesApp.swift */; };
+		21F464262C064E19008E6724 /* MyToDosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F464252C064E19008E6724 /* MyToDosApp.swift */; };
 		21F464282C064E19008E6724 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F464272C064E19008E6724 /* ContentView.swift */; };
 		21F4642A2C064E1A008E6724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F464292C064E1A008E6724 /* Assets.xcassets */; };
 		21F4642D2C064E1A008E6724 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F4642C2C064E1A008E6724 /* Preview Assets.xcassets */; };
 		21F464372C064E1A008E6724 /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F464362C064E1A008E6724 /* NotesTests.swift */; };
 		21F464412C064E1A008E6724 /* NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F464402C064E1A008E6724 /* NotesUITests.swift */; };
 		21F464432C064E1A008E6724 /* NotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F464422C064E1A008E6724 /* NotesUITestsLaunchTests.swift */; };
+		21F464502C064F36008E6724 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F4644F2C064F36008E6724 /* ToDoItem.swift */; };
+		21F464522C065727008E6724 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F464512C065727008E6724 /* CreateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		21F464222C064E19008E6724 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		21F464252C064E19008E6724 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
+		21F464252C064E19008E6724 /* MyToDosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToDosApp.swift; sourceTree = "<group>"; };
 		21F464272C064E19008E6724 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21F464292C064E1A008E6724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21F4642C2C064E1A008E6724 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		21F4643C2C064E1A008E6724 /* NotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F464402C064E1A008E6724 /* NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUITests.swift; sourceTree = "<group>"; };
 		21F464422C064E1A008E6724 /* NotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		21F4644F2C064F36008E6724 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		21F464512C065727008E6724 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,10 @@
 		21F464242C064E19008E6724 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				21F464252C064E19008E6724 /* NotesApp.swift */,
+				21F464252C064E19008E6724 /* MyToDosApp.swift */,
+				21F464512C065727008E6724 /* CreateView.swift */,
 				21F464272C064E19008E6724 /* ContentView.swift */,
+				21F4644F2C064F36008E6724 /* ToDoItem.swift */,
 				21F464292C064E1A008E6724 /* Assets.xcassets */,
 				21F4642B2C064E1A008E6724 /* Preview Content */,
 			);
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F464282C064E19008E6724 /* ContentView.swift in Sources */,
-				21F464262C064E19008E6724 /* NotesApp.swift in Sources */,
+				21F464262C064E19008E6724 /* MyToDosApp.swift in Sources */,
+				21F464522C065727008E6724 /* CreateView.swift in Sources */,
+				21F464502C064F36008E6724 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
