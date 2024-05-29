@@ -12,7 +12,10 @@ import SwiftData
  struct ContentView: View {
     @Environment(\.modelContext) var context
      @State private var toDoEdit: ToDoItem?
-    @Query private var items: [ToDoItem]
+     @Query(
+        sort: \ToDoItem.timestamp,
+        order: .reverse
+     ) private var items: [ToDoItem]
     @State private var showCreate = false
     var body: some View {
         NavigationStack {
