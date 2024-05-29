@@ -11,7 +11,7 @@ import SwiftData
 
  struct ContentView: View {
     @Environment(\.modelContext) var context
-
+     @State private var toDoEdit: ToDoItem?
     @Query private var items: [ToDoItem]
     @State private var showCreate = false
     var body: some View {
@@ -48,6 +48,15 @@ import SwiftData
                                 }
                             } label: {Label("Delete", systemImage: "trash").symbolVariant(/*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                             }
+                            
+                            Button{
+                                
+                                toDoEdit = item
+                                
+                            } label: {Label("Edit", systemImage: "pencil")
+                            }.tint(.orange)
+                            
+                            
                         }
                 }
             }
@@ -67,7 +76,12 @@ import SwiftData
                     }
                     .presentationDetents([.medium])
                 })
-                
+                .sheet(item: $toDoEdit){
+                    toDoEdit = nil;
+                }
+        
+        content:{ item in UpdateToDoView(item: item)
+        }
         }
     }
 }

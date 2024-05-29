@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21E7B35E2C07829600517081 /* UpdateToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E7B35D2C07829600517081 /* UpdateToDoView.swift */; };
 		21F464262C064E19008E6724 /* MyToDosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F464252C064E19008E6724 /* MyToDosApp.swift */; };
 		21F464282C064E19008E6724 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F464272C064E19008E6724 /* ContentView.swift */; };
 		21F4642A2C064E1A008E6724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F464292C064E1A008E6724 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21E7B35D2C07829600517081 /* UpdateToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToDoView.swift; sourceTree = "<group>"; };
 		21F464222C064E19008E6724 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F464252C064E19008E6724 /* MyToDosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToDosApp.swift; sourceTree = "<group>"; };
 		21F464272C064E19008E6724 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				21F464252C064E19008E6724 /* MyToDosApp.swift */,
 				21F464512C065727008E6724 /* CreateView.swift */,
 				21F464272C064E19008E6724 /* ContentView.swift */,
+				21E7B35D2C07829600517081 /* UpdateToDoView.swift */,
 				21F4644F2C064F36008E6724 /* ToDoItem.swift */,
 				21F464292C064E1A008E6724 /* Assets.xcassets */,
 				21F4642B2C064E1A008E6724 /* Preview Content */,
@@ -266,6 +269,7 @@
 				21F464282C064E19008E6724 /* ContentView.swift in Sources */,
 				21F464262C064E19008E6724 /* MyToDosApp.swift in Sources */,
 				21F464522C065727008E6724 /* CreateView.swift in Sources */,
+				21E7B35E2C07829600517081 /* UpdateToDoView.swift in Sources */,
 				21F464502C064F36008E6724 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
