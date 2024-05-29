@@ -5,27 +5,31 @@
 //  Created by Yashavika Singh on 28.05.24.
 //
 
-import Foundation
-import SwiftUI
+ import SwiftUI
+import CoreData
 
 struct CreateToDoView: View{
-    
     @Environment(\.dismiss) var dismiss
-    
-    var body: some View{
-        List{
-            TextField("Name", text: .constant(""))
-            DatePicker("Choose a date", selection: .constant(.now))
-            Toggle("Important? ", isOn: .constant(false))
-            Button("Create")
-            {
-                dismiss()
-            }
-        }
-        .navigationTitle("Create To Do")
-    }
-}
-
-#Preview{
-    CreateToDoView()
-}
+     @Environment(\.modelContext) var context
+     
+     @State private var item = ToDoItem()
+     
+     var body: some View {
+         List {
+             TextField("Name", text: $item.title)
+             DatePicker("Choose a date", selection: $item.timestamp)
+             Toggle("Important?", isOn: $item.isCritical)
+             Button("Create") {
+                 withAnimation {
+                     context.insert(item)
+                 }
+                 dismiss()
+             }
+         }
+         .navigationTitle("Create ToDo")
+     }
+ }
+ #Preview {
+     
+     CreateToDoView().modelContainer(for: ToDoItem.self)
+ }
