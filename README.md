@@ -1,4 +1,4 @@
-
+# To Do List
 An app that allows you to create, update and delete to do items
 they're sorted according to timestamp, you can mark to do's as important
 you can tick off completed to do's, they won't be removed from the list
